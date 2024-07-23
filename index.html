@@ -3,52 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Academic Portfolio</title>
+    <title>Kevin Chavez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
         }
-        header {
+        .header {
             position: relative;
             color: white;
-            display: flex;
-            align-items: center;
+            text-align: center;
             padding: 0 2rem;
-            height: 300px; /* Adjust this height as needed */
-            z-index: 2;
-            background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background color to enhance text visibility */
-        }
-        #banner {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 300px; /* Increased height for the banner */
+            height: 180px; /* Adjust as needed */
             background: url('https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/calabi-yau-manifold-1.png') no-repeat center center;
             background-size: cover;
-            z-index: 1;
             filter: brightness(0.6); /* Darken the banner for better text visibility */
-        }
-        nav {
-            background-color: #333;
-            position: static; /* Ensure navigation is not fixed */
-            top: 310px; /* Positioned below the banner */
-            width: 100%;
-            z-index: 3;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
             display: flex;
+            align-items: center;
             justify-content: center;
         }
-        nav ul li {
-            position: relative;
+        .header h1 {
+            margin: 0;
+            color: white;
+            line-height: 1.2;
         }
-        nav ul li a {
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            position: static; /* Ensure navigation is not fixed */
+            width: 100%;
+        }
+        .tabs a {
             display: block;
             color: white;
             text-align: center;
@@ -56,134 +49,108 @@
             text-decoration: none;
             transition: background-color 0.3s ease;
         }
-        nav ul li a:hover {
+        .tabs a:hover, .dropdown:hover .dropbtn {
             background-color: #111;
         }
-        nav ul li ul {
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
             display: none;
             position: absolute;
-            top: 100%;
-            left: 0;
             background-color: #333;
+            min-width: 160px;
+            z-index: 1;
         }
-        nav ul li:hover ul {
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .dropdown:hover .dropdown-content {
             display: block;
         }
-        nav ul li ul li {
-            width: 200px;
-        }
-        nav ul li ul li a {
-            padding: 10px 20px;
-        }
-        #content {
+        .main {
             padding: 2rem;
-            margin-top: 320px; /* Adjust margin to ensure content is not covered by banner */
+            margin-top: 220px; /* Adjust margin to ensure content is not covered by header */
         }
-        .section {
+        .text {
             margin-bottom: 2rem;
         }
-        .columns {
-            display: flex;
-            flex-wrap: wrap;
+        .img-container {
+            text-align: center;
         }
-        .left-column, .right-column {
-            flex: 1;
-            padding: 1rem;
-        }
-        .left-column {
-            flex: 2;
-        }
-        .profile-pic {
-            width: 150px; /* Adjust the width as needed */
+        .img-container img {
+            max-width: 100%;
             height: auto;
-            border-radius: 5%; /* Makes the image circular */
-            display: block;
-            margin: 0 auto;
         }
-        .education a, .work-experience a {
+        .list1, .list2 {
+            list-style-type: none;
+            padding: 0;
+        }
+        .list2 {
+            padding-left: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+        .footer a {
             color: #007bff;
             text-decoration: none;
         }
-        .education a:hover, .work-experience a:hover {
+        .footer a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-<div id="banner"></div>
-
-<header>
-    <div class="left">
-        <h1>Kevin Chavez</h1>
+    <div class="header">
+        <div>
+            <h1>Kevin</h1>
+            <h1>Chavez</h1>
+        </div>
     </div>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#more">More</a>
-            <ul>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#goals">Goals</a></li>
-            </ul>
-        </li>
+    <ul class="tabs">
+        <a class="active tab-link" href="#home">Home</a>
+        <a class="tab-link" href="#research">Research</a>
+        <a class="tab-link" href="#cv">CV</a>
+        <a class="tab-link" href="#contact">Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn">More <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a class="tab-link" href="#achievements">Achievements</a>
+                <a class="tab-link" href="#goals">Goals</a>
+            </div>
+        </div>
     </ul>
-</nav>
-
-<div id="content">
-    <div id="home" class="section columns">
-        <div class="left-column">
-            <h2>About Me</h2>
-            <p>Welcome to my academic portfolio. Here, you can learn about my research, my story, and my achievements. Feel free to explore and get in touch with me through the contact section.</p>
+    <div class="main">
+        <div class="text">
+            <p>Hello, I am Kevin Chavez. Welcome to my academic portfolio. Here you can learn about my research, my story, and my achievements. Feel free to explore and get in touch with me through the contact section.</p>
         </div>
-        <div class="right-column">
-            <img src="https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/20240722_184512.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="img-container">
+            <img src="https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/20240722_184512.jpg" alt="Profile Picture">
             <h3>Academic History</h3>
-            <div class="education">
-                <h4><a href="https://www.rider.edu/" target="_blank">Rider University</a></h4>
-                <p><strong>Bachelor of Arts - BA, Mathematics</strong></p>
-                <p>Sep 2021 - May 2023</p>
-                <p>Grade: 3.4</p>
-                <p>Activities and Societies: Math Club</p>
-            </div>
+            <ul class="list1">
+                <li>Bachelor of Arts - BA, Mathematics, <a href="https://www.rider.edu/" target="_blank">Rider University</a>, Sep 2021 - May 2023</li>
+            </ul>
             <h3>Work Experience</h3>
-            <div class="work-experience">
-                <p><strong><a href="https://www.stemcivics.org/" target="_blank">Math Teacher, Geometry:</a></strong> Stemcivics High School</p>
-                <p>Sep 2023 - May 2024</p>
-                <p>Taught geometry to high school students, developed lesson plans, and assessed student progress.</p>
-            </div>
+            <ul class="list1">
+                <li>Math Teacher, Geometry: <a href="https://www.stemcivics.org/" target="_blank">Stemcivics High School</a>, Sep 2023 - May 2024</li>
+            </ul>
         </div>
     </div>
-
-    <div id="research" class="section">
-        <h2>Research</h2>
-        <p>Here you can find details about my research projects, publications, and interests.</p>
+    <div class="footer">
+        <a href="https://linkedin.com/in/kevin-ch%C3%A1vez-639076236" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        <p>Email: kevin[dot]chavez[at]example[dot]com</p>
     </div>
-
-    <div id="cv" class="section">
-        <h2>Curriculum Vitae</h2>
-        <p>Download my CV to see my academic and professional background in detail.</p>
-    </div>
-
-    <div id="contact" class="section">
-        <h2>Contact</h2>
-        <p>If you have any questions or would like to collaborate, please reach out to me.</p>
-    </div>
-
-    <div id="achievements" class="section">
-        <h2>Achievements</h2>
-        <p>Some of my key achievements and recognitions throughout my academic career.</p>
-    </div>
-
-    <div id="goals" class="section">
-        <h2>Goals</h2>
-        <p>My future goals and aspirations in the academic and research fields.</p>
-    </div>
-</div>
-
 </body>
 </html>

@@ -14,7 +14,6 @@
             padding: 0;
             background: url('https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/free-peru-wallpaper_020650953_170.jpg') no-repeat center center fixed;
             background-size: cover;
-            position: relative;
             color: white; /* Set default text color to white */
         }
         .overlay {
@@ -23,8 +22,15 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Darken the background */
+            background: rgba(0, 0, 0, 0.4); /* Darken the background */
             z-index: -1; /* Place it behind the content */
+        }
+        .container {
+            background-color: black; /* Black background for content area */
+            color: white; /* Ensure text in content area is white */
+            padding: 2rem;
+            margin: 0 auto;
+            max-width: 1200px; /* Adjust as needed */
         }
         .header {
             position: relative;
@@ -38,6 +44,7 @@
             display: flex;
             align-items: center;
             justify-content: flex-start; /* Align text to the left */
+            margin-bottom: 2rem; /* Space between header and content */
         }
         .header h1 {
             margin: 0;
@@ -51,7 +58,6 @@
             padding: 0;
             margin: 0;
             list-style-type: none;
-            position: static; /* Ensure navigation is not fixed */
             width: 100%;
         }
         .tabs a, .dropdown .dropbtn {
@@ -109,7 +115,6 @@
         }
         .main {
             padding: 2rem;
-            margin-top: 180px; /* Adjust margin to ensure content is not covered by header */
             display: flex;
             justify-content: center;
             gap: 2rem;
@@ -168,47 +173,49 @@
 </head>
 <body>
     <div class="overlay"></div>
-    <div class="header">
-        <div>
-            <h1>Kevin Chavez</h1>
-        </div>
-    </div>
-    <ul class="tabs">
-        <a class="active tab-link" href="#home">Home</a>
-        <a class="tab-link" href="#research">Research</a>
-        <a class="tab-link" href="#cv">CV</a>
-        <a class="tab-link" href="#contact">Contact</a>
-        <div class="dropdown">
-            <button class="dropbtn">More <i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content">
-                <a class="tab-link" href="#achievements">Achievements</a>
-                <a class="tab-link" href="#goals">Goals</a>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>Kevin Chavez</h1>
             </div>
         </div>
-    </ul>
-    <div class="main">
-        <div class="left-column">
-            <div class="text">
-                <p>Hello, I am Kevin Chavez. Welcome to my academic portfolio. Here you can learn about my research, my story, and my achievements. Feel free to explore and get in touch with me through the contact section.</p>
+        <ul class="tabs">
+            <a class="active tab-link" href="#home">Home</a>
+            <a class="tab-link" href="#research">Research</a>
+            <a class="tab-link" href="#cv">CV</a>
+            <a class="tab-link" href="#contact">Contact</a>
+            <div class="dropdown">
+                <button class="dropbtn">More <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a class="tab-link" href="#achievements">Achievements</a>
+                    <a class="tab-link" href="#goals">Goals</a>
+                </div>
+            </div>
+        </ul>
+        <div class="main">
+            <div class="left-column">
+                <div class="text">
+                    <p>Hello, I am Kevin Chavez. Welcome to my academic portfolio. Here you can learn about my research, my story, and my achievements. Feel free to explore and get in touch with me through the contact section.</p>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="img-container">
+                    <img src="https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/20240722_184512.jpg" alt="Profile Picture">
+                    <h3>Academic History</h3>
+                    <ul class="list1">
+                        <li>Bachelor of Arts - BA, Mathematics, <a href="https://www.rider.edu/" target="_blank">Rider University</a>, Sep 2021 - May 2023</li>
+                    </ul>
+                    <h3>Work Experience</h3>
+                    <ul class="list1">
+                        <li>Math Teacher, Geometry: <a href="https://www.stemcivics.org/" target="_blank">Stemcivics High School</a>, Sep 2023 - May 2024</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="right-column">
-            <div class="img-container">
-                <img src="https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/20240722_184512.jpg" alt="Profile Picture">
-                <h3>Academic History</h3>
-                <ul class="list1">
-                    <li>Bachelor of Arts - BA, Mathematics, <a href="https://www.rider.edu/" target="_blank">Rider University</a>, Sep 2021 - May 2023</li>
-                </ul>
-                <h3>Work Experience</h3>
-                <ul class="list1">
-                    <li>Math Teacher, Geometry: <a href="https://www.stemcivics.org/" target="_blank">Stemcivics High School</a>, Sep 2023 - May 2024</li>
-                </ul>
-            </div>
+        <div class="footer">
+            <a href="https://linkedin.com/in/kevin-ch%C3%A1vez-639076236" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            <p>Email: kevinchavezpostillon[at]gmail[dot]com</p>
         </div>
-    </div>
-    <div class="footer">
-        <a href="https://linkedin.com/in/kevin-ch%C3%A1vez-639076236" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-        <p>Email: kevinchavezpostillon[at]gmail[dot]com</p>
     </div>
 </body>
 </html>

@@ -12,11 +12,13 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            background: url('https://www.example.com/path-to-your-background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
         .header {
             position: relative;
             color: white;
-            text-align: center;
+            text-align: left;
             padding: 0 2rem;
             height: 180px; /* Adjust as needed */
             background: url('https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/calabi-yau-manifold-1.png') no-repeat center center;
@@ -24,7 +26,7 @@
             filter: brightness(0.6); /* Darken the banner for better text visibility */
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start; /* Align text to the left */
         }
         .header h1 {
             margin: 0;
@@ -142,8 +144,7 @@
 <body>
     <div class="header">
         <div>
-            <h1>Kevin</h1>
-            <h1>Chavez</h1>
+            <h1>Kevin Chavez</h1>
         </div>
     </div>
     <ul class="tabs">

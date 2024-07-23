@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: url(https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/free-peru-wallpaper_020650953_170.jpg') no-repeat center center fixed; /* Set your background image */
+    background: url(https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/free-peru-wallpaper_020650953_170.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
 }
@@ -11,12 +11,16 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for content */
+    margin: 20px; /* Add margin to create space around the content box */
+    border-radius: 10px; /* Rounded corners for the content box */
+    padding: 20px; /* Padding inside the content box */
 }
 
 .header {
-    background: url('https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/calabi-yau-manifold-1.png') no-repeat center center; /* Set your banner image */
+    background: url('https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/calabi-yau-manifold-1.png') no-repeat center center;
     background-size: cover;
-    padding: 60px 20px; /* Adjust padding to fit your banner image */
+    padding: 60px 20px;
     text-align: center;
     color: white;
 }
@@ -30,6 +34,8 @@ body {
     display: flex;
     justify-content: center;
     background-color: #333;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .tabs .tab-link {
@@ -61,15 +67,15 @@ body {
 
 .text {
     max-width: 600px;
-    background: rgba(255, 255, 255, 0.8); /* Background with transparency */
     padding: 20px;
     border-radius: 10px;
 }
 
 .img-container {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 200px; /* Adjusted to your desired width */
+    max-height: 200px; /* Adjusted to your desired height */
     overflow: hidden;
+    margin: auto; /* Center the image */
 }
 
 .img-container img {
@@ -80,13 +86,15 @@ body {
 .footer {
     background-color: #333;
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .footer a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
 }
 

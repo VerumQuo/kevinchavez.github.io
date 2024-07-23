@@ -10,11 +10,11 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    background: white; /* Solid white background for content */
-    margin: 70px; /* Add margin to create space around the content box */
-    border-radius: 10px; /* Rounded corners for the content box */
-    padding: 20px; /* Padding inside the content box */
+    min-height: 150vh;
+    background: #003554; /* Solid white background for content */
+    margin: 20px; /* Add margin to create space around the content box */
+    border-radius: 5px; /* Rounded corners for the content box */
+    padding: 10px; /* Padding inside the content box */
 }
 
 .header {

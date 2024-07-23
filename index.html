@@ -41,13 +41,14 @@
             position: static; /* Ensure navigation is not fixed */
             width: 100%;
         }
-        .tabs a {
+        .tabs a, .dropdown .dropbtn {
             display: block;
             color: white;
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
             transition: background-color 0.3s ease;
+            box-sizing: border-box; /* Ensure padding is included in element's total width and height */
         }
         .tabs a:hover, .dropdown:hover .dropbtn {
             background-color: #111;
@@ -67,7 +68,7 @@
             border: none;
             cursor: pointer;
         }
-        .dropbtn:hover {
+        .dropdown:hover .dropbtn {
             background-color: #111;
         }
         .dropdown-content {

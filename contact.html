@@ -7,210 +7,42 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/free-peru-wallpaper_020650953_170.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: white; /* Default text color */
-        }
-        .container {
-            background-color: #36454F; /* Charcoal background for the content area */
-            color: white; /* Ensure text in content area is white */
-            padding: 2rem;
-            margin: 0 auto;
-            max-width: 900px; /* Adjusted width for content area */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for contrast */
-        }
-        .header, .tabs {
-            background-color: #333333; /* Charcoal background for header and menu */
-            padding: 0;
-            margin: 0;
-            width: 100%; /* Ensure header and menu fit the content width */
-            box-sizing: border-box; /* Include padding in width */
-        }
-        .header {
-            position: relative;
-            color: white;
-            text-align: left;
-            padding: 0 2rem;
-            height: 180px; /* Adjust as needed */
-            background: url('https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/calabi-yau-manifold-1.png') no-repeat center center;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start; /* Align text to the left */
-            box-sizing: border-box;
-            filter: none; /* Removed dark overlay filter */
-        }
-        .header h1 {
-            margin: 0;
-            color: white;
-            line-height: 1.2;
-        }
-        .tabs {
-            display: flex;
-            justify-content: space-around;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        .tabs a {
-            color: lightblue; /* Light blue color for menu links */
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            box-sizing: border-box; /* Ensure padding is included in element's total width and height */
-            flex: 1; /* Ensure each tab takes equal space */
-        }
-        .tabs a:hover {
-            background-color: #444444; /* Slightly lighter Charcoal on hover */
-        }
-        .main {
-            padding: 2rem;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
-        .left-column {
-            flex: 1;
-        }
-        .right-column {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Align content to the left */
-        }
-        .text {
-            margin-bottom: 2rem;
-        }
-        .text p {
-            color: white; /* Set paragraph text color to white */
-        }
-        .img-container {
-            text-align: center;
-            margin-bottom: 2rem; /* Add margin to separate from other content */
-        }
-        .img-container img {
-            max-width: 50%; /* Smaller profile picture */
-            height: auto;
-            display: block;
-            margin: 0 auto; /* Center the image */
-        }
-        .list1, .list2 {
-            list-style-type: none;
-            padding: 0;
-        }
-        .list1 a {
-            color: lightblue; /* Light blue color for links */
-        }
-        .list1 a:hover {
-            color: #00aaff; /* Slightly darker blue for hover effect */
-        }
-        .list2 {
-            padding-left: 20px;
-        }
-        .footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem;
-            background-color: #333333; /* Charcoal background */
-            color: white;
-        }
-        .footer a {
-            color: lightblue; /* Light blue color for footer links */
-            text-decoration: none;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-        }
-        .footer p {
-            margin: 0;
-        }
-        .section-title {
-            margin-top: 2rem;
-            font-size: 1.5rem;
-            border-bottom: 2px solid lightblue;
-            padding-bottom: 0.5rem;
-            width: 100%; /* Ensure full width for section titles */
-        }
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        .contact-form label {
-            font-weight: bold;
-        }
-        .contact-form input, .contact-form textarea {
-            padding: 0.5rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            width: 100%;
-            background: #fff;
-            color: #000;
-        }
-        .contact-form button {
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 4px;
-            background: lightblue;
-            color: #000;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        .contact-form button:hover {
-            background: #00aaff;
-            color: #fff;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
+    <div class="wrapper">
         <div class="header">
-            <div>
-                <h1>Kevin Chavez</h1>
-            </div>
+            <h1>Kevin Chavez</h1>
         </div>
         <ul class="tabs">
-            <a class="tab-link" href="index.html">Home</a>
-            <a class="tab-link" href="research.html">Research</a>
-            <a class="tab-link" href="cv.html">CV</a>
-            <a class="tab-link" href="contact.html">Contact</a>
-            <a class="tab-link" href="notes.html">Notes</a>
-            <a class="tab-link" href="goals.html">Goals</a>
+            <li><a class="tab-link" href="index.html">Home</a></li>
+            <li><a class="tab-link" href="research.html">Research</a></li>
+            <li><a class="tab-link" href="cv.html">CV</a></li>
+            <li><a class="tab-link active" href="contact.html">Contact</a></li>
+            <li><a class="tab-link" href="notes.html">Notes</a></li>
+            <li><a class="tab-link" href="goals.html">Goals</a></li>
         </ul>
         <div class="main">
-            <div class="left-column">
-                <div class="text">
-                    <p>Feel free to reach out to me using the contact form below or through my email.</p>
-                </div>
+            <div class="text">
+                <p>Feel free to reach out to me using the contact form below or through my email.</p>
             </div>
-            <div class="right-column">
-                <div class="section-content">
-                    <h3 class="section-title">Contact Form</h3>
-                    <form class="contact-form" action="mailto:kevinchavezpostillon@gmail.com" method="post" enctype="text/plain">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                        <button type="submit">Send Message</button>
-                    </form>
-                </div>
-                <div class="section-content">
-                    <h3 class="section-title">Contact Details</h3>
-                    <ul class="list1">
-                        <li>Email: <a href="mailto:kevinchavezpostillon@gmail.com">kevinchavezpostillon@gmail.com</a></li>
-                        <li>LinkedIn: <a href="https://linkedin.com/in/kevin-ch%C3%A1vez-639076236" target="_blank">LinkedIn Profile</a></li>
-                    </ul>
-                </div>
+            <div class="contact">
+                <h3>Contact Form</h3>
+                <form action="mailto:kevinchavezpostillon@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-details">
+                <h3>Contact Details</h3>
+                <ul class="list1">
+                    <li>Email: <a href="mailto:kevinchavezpostillon@gmail.com">kevinchavezpostillon@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/kevin-ch%C3%A1vez-639076236" target="_blank">LinkedIn Profile</a></li>
+                </ul>
             </div>
         </div>
         <div class="footer">

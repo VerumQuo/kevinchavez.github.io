@@ -26,7 +26,7 @@
             z-index: -1; /* Place it behind the content */
         }
         .container {
-            background-color: black; /* Black background for content area */
+            background-color: #d63f9b; /* Tele-magenta background for content area */
             color: white; /* Ensure text in content area is white */
             padding: 2rem;
             margin: 0 auto;
@@ -44,7 +44,8 @@
             display: flex;
             align-items: center;
             justify-content: flex-start; /* Align text to the left */
-            margin-bottom: 2rem; /* Space between header and content */
+            width: 100%; /* Ensure header fits the page */
+            box-sizing: border-box; /* Include padding in width */
         }
         .header h1 {
             margin: 0;
@@ -54,7 +55,7 @@
         .tabs {
             display: flex;
             justify-content: center;
-            background-color: #333;
+            background-color: #d63f9b; /* Tele-magenta background for menu */
             padding: 0;
             margin: 0;
             list-style-type: none;
@@ -70,7 +71,7 @@
             box-sizing: border-box; /* Ensure padding is included in element's total width and height */
         }
         .tabs a:hover, .dropdown:hover .dropbtn {
-            background-color: #111;
+            background-color: #b73a85; /* Slightly darker tele-magenta on hover */
         }
         .dropdown {
             position: relative;
@@ -83,17 +84,17 @@
             padding: 14px 20px;
             text-decoration: none;
             transition: background-color 0.3s ease;
-            background-color: #333;
+            background-color: #d63f9b; /* Tele-magenta background */
             border: none;
             cursor: pointer;
         }
         .dropdown:hover .dropbtn {
-            background-color: #111;
+            background-color: #b73a85; /* Slightly darker tele-magenta on hover */
         }
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #333;
+            background-color: #d63f9b; /* Tele-magenta background for dropdown */
             min-width: 160px;
             z-index: 1;
             list-style-type: none;
@@ -108,7 +109,7 @@
             text-align: left;
         }
         .dropdown-content a:hover {
-            background-color: #575757;
+            background-color: #b73a85; /* Slightly darker tele-magenta on hover */
         }
         .dropdown:hover .dropdown-content {
             display: block;
@@ -135,7 +136,7 @@
             text-align: center;
         }
         .img-container img {
-            max-width: 100%;
+            max-width: 80%; /* Smaller profile picture */
             height: auto;
         }
         .list1, .list2 {
@@ -156,7 +157,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 1rem;
-            background-color: #333;
+            background-color: #d63f9b; /* Tele-magenta background */
             color: white;
         }
         .footer a {

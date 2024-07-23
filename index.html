@@ -56,12 +56,29 @@
             position: relative;
             display: inline-block;
         }
+        .dropbtn {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            background-color: #333;
+            border: none;
+            cursor: pointer;
+        }
+        .dropbtn:hover {
+            background-color: #111;
+        }
         .dropdown-content {
             display: none;
             position: absolute;
             background-color: #333;
             min-width: 160px;
             z-index: 1;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
         }
         .dropdown-content a {
             color: white;
@@ -78,7 +95,16 @@
         }
         .main {
             padding: 2rem;
-            margin-top: 220px; /* Adjust margin to ensure content is not covered by header */
+            margin-top: 180px; /* Adjust margin to ensure content is not covered by header */
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .left-column {
+            flex: 1;
+        }
+        .right-column {
+            flex: 1;
         }
         .text {
             margin-bottom: 2rem;
@@ -133,19 +159,23 @@
         </div>
     </ul>
     <div class="main">
-        <div class="text">
-            <p>Hello, I am Kevin Chavez. Welcome to my academic portfolio. Here you can learn about my research, my story, and my achievements. Feel free to explore and get in touch with me through the contact section.</p>
+        <div class="left-column">
+            <div class="text">
+                <p>Hello, I am Kevin Chavez. Welcome to my academic portfolio. Here you can learn about my research, my story, and my achievements. Feel free to explore and get in touch with me through the contact section.</p>
+            </div>
         </div>
-        <div class="img-container">
-            <img src="https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/20240722_184512.jpg" alt="Profile Picture">
-            <h3>Academic History</h3>
-            <ul class="list1">
-                <li>Bachelor of Arts - BA, Mathematics, <a href="https://www.rider.edu/" target="_blank">Rider University</a>, Sep 2021 - May 2023</li>
-            </ul>
-            <h3>Work Experience</h3>
-            <ul class="list1">
-                <li>Math Teacher, Geometry: <a href="https://www.stemcivics.org/" target="_blank">Stemcivics High School</a>, Sep 2023 - May 2024</li>
-            </ul>
+        <div class="right-column">
+            <div class="img-container">
+                <img src="https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/20240722_184512.jpg" alt="Profile Picture">
+                <h3>Academic History</h3>
+                <ul class="list1">
+                    <li>Bachelor of Arts - BA, Mathematics, <a href="https://www.rider.edu/" target="_blank">Rider University</a>, Sep 2021 - May 2023</li>
+                </ul>
+                <h3>Work Experience</h3>
+                <ul class="list1">
+                    <li>Math Teacher, Geometry: <a href="https://www.stemcivics.org/" target="_blank">Stemcivics High School</a>, Sep 2023 - May 2024</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="footer">

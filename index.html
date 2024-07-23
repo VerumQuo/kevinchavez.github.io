@@ -15,6 +15,7 @@
             background: url('https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/free-peru-wallpaper_020650953_170.jpg') no-repeat center center fixed;
             background-size: cover;
             position: relative;
+            color: white; /* Set default text color to white */
         }
         .overlay {
             position: absolute;
@@ -22,7 +23,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.8); /* Darken the background */
+            background: rgba(0, 0, 0, 0.5); /* Darken the background */
             z-index: -1; /* Place it behind the content */
         }
         .header {
@@ -122,6 +123,9 @@
         .text {
             margin-bottom: 2rem;
         }
+        .text p {
+            color: white; /* Set paragraph text color to white */
+        }
         .img-container {
             text-align: center;
         }
@@ -132,6 +136,12 @@
         .list1, .list2 {
             list-style-type: none;
             padding: 0;
+        }
+        .list1 a {
+            color: lightpink; /* Set link color to light pink */
+        }
+        .list1 a:hover {
+            color: #ff66b2; /* Slightly darker pink for hover effect */
         }
         .list2 {
             padding-left: 20px;
@@ -145,11 +155,14 @@
             color: white;
         }
         .footer a {
-            color: #007bff;
+            color: lightpink; /* Set link color to light pink */
             text-decoration: none;
         }
         .footer a:hover {
             text-decoration: underline;
+        }
+        .footer p {
+            margin: 0;
         }
     </style>
 </head>

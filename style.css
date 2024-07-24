@@ -11,10 +11,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 80vh;
-    background: #333; /* Solid white background for content */
-    margin: 50px; /* Add margin to create space around the content box */
+    background: rgba(51, 51, 51, 0.9); /* Dark background for content with slight transparency */
+    margin: 40px auto; /* Center content horizontally with margin */
     border-radius: 10px; /* Rounded corners for the content box */
-    padding: 10px; /* Padding inside the content box */
+    padding: 20px; /* Padding inside the content box */
+    max-width: 1200px; /* Set a maximum width for the content box */
 }
 
 .header {
@@ -23,6 +24,7 @@ body {
     padding: 60px 20px;
     text-align: center;
     color: white;
+    border-radius: 10px; /* Rounded corners for the header */
 }
 
 .header h1 {
@@ -35,7 +37,7 @@ body {
     justify-content: center;
     background-color: #333;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin: 20px 0; /* Margin for spacing between header and main content */
 }
 
 .tabs .tab-link {
@@ -60,23 +62,25 @@ body {
 .main {
     flex: 1;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
 .text {
-    max-width: 600px;
+    max-width: 800px; /* Increased max-width for better text readability */
     padding: 20px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for text */
 }
 
 .img-container {
-    max-width: 200px; /* Adjusted to your desired width */
-    max-height: 200px; /* Adjusted to your desired height */
+    max-width: 150px; /* Adjusted to desired width */
+    max-height: 150px; /* Adjusted to desired height */
     overflow: hidden;
-    margin: auto; /* Center the image */
+    margin: 20px 0; /* Margin for spacing around the image */
+    border-radius: 10px; /* Rounded corners for the image container */
 }
 
 .img-container img {

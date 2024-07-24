@@ -11,8 +11,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 150vh;
-    background: #003554; /* Solid white background for content */
-    margin: 20px; /* Add margin to create space around the content box */
+    background: #333; /* Solid white background for content */
+    margin: 80px; /* Add margin to create space around the content box */
     border-radius: 5px; /* Rounded corners for the content box */
     padding: 10px; /* Padding inside the content box */
 }

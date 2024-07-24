@@ -15,7 +15,7 @@ body {
     margin: 40px auto; /* Center content horizontally with margin */
     border-radius: 10px; /* Rounded corners for the content box */
     padding: 20px; /* Padding inside the content box */
-    max-width: 1200px; /* Set a maximum width for the content box */
+    max-width: 800px; /* Set a maximum width for the content box */
     width: 100%; /* Ensure the wrapper takes up full width within the max-width */
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .tabs .tab-link.active {
-    background-color: #4CAF50;
+    background-color: #1A3850;
     color: white;
 }
 
@@ -77,7 +77,7 @@ body {
     background-color: rgba(0, 0, 0, 0.8); /* Black transparent */
     padding: 2em;
     border-radius: 8px;
-    max-width: 800px;
+    max-width: 600px;
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

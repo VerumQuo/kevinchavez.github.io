@@ -1,110 +1,134 @@
 /* General styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Monaco', 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background: url('https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/free-peru-wallpaper_020650953_170.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 80vh;
+    margin: 40px auto; /* Center content horizontally with margin */
+    border-radius: 10px; /* Rounded corners for the content box */
+    padding: 20px; /* Padding inside the content box */
+    max-width: 1200px; /* Set a maximum width for the content box */
+    width: 100%; /* Ensure the wrapper takes up full width within the max-width */
 }
 
 .header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1em;
+    background: url('https://raw.githubusercontent.com/kpostillon/kpostillon.github.io/main/calabi-yau-manifold-1.png') no-repeat center center;
+    background-size: cover;
+    padding: 60px 20px;
     text-align: center;
+    color: white;
+    border-radius: 10px; /* Rounded corners for the header */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
 }
 
 .tabs {
     display: flex;
     justify-content: center;
     background-color: #333;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.tabs li {
-    margin: 0;
+    border-radius: 10px;
+    margin: 20px 0; /* Margin for spacing between header and main content */
 }
 
 .tabs .tab-link {
+    padding: 14px 20px;
     display: block;
     color: white;
-    text-decoration: none;
-    padding: 1em;
     text-align: center;
+    text-decoration: none;
+    font-size: 1em;
 }
 
-.tabs .tab-link.active, .tabs .tab-link:hover {
+.tabs .tab-link:hover {
+    background-color: #444; /* Lighter tone */
+}
+
+.tabs .tab-link.active {
     background-color: #4CAF50;
+    color: white;
 }
 
 .main {
     flex: 1;
-    padding: 2em;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px;
+}
+
+.content-box {
+    background-color: rgba(0, 0, 0, 0.8); /* Black transparent */
+    padding: 2em;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .text {
-    max-width: 800px;
-    width: 100%;
     margin-bottom: 2em;
 }
 
 .img-container {
-    max-width: 600px;
-    width: 100%;
-    margin-bottom: 2em;
-    text-align: center;
+    max-width: 150px; /* Adjusted to desired width */
+    max-height: 150px; /* Adjusted to desired height */
+    overflow: hidden;
+    margin: 20px 0; /* Margin for spacing around the image */
+    border-radius: 10px; /* Rounded corners for the image container */
 }
 
 .img-container img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
 .footer {
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .footer a {
     color: white;
-    margin: 0 0.5em;
+    text-decoration: none;
 }
 
-.footer p {
-    margin: 0.5em 0;
+.footer a:hover {
+    color: #4CAF50;
 }
 
-/* Styles for lists */
-ul.list, ul.list1, ul.list2 {
+.list, .list1, .list2 {
+    list-style: none;
+    padding: 0;
+}
+
+.list1 {
     padding-left: 20px;
-    margin-bottom: 1em;
 }
 
-ul.list1 {
-    list-style-type: square;
-}
-
-ul.list2 {
-    list-style-type: circle;
-}
-
-/* Centered text */
-.center {
-    text-align: center;
+.list2 {
+    padding-left: 40px;
 }
 
 /* Responsive Design */

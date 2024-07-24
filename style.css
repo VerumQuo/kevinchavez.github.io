@@ -15,7 +15,7 @@ body {
     margin: 40px auto; /* Center content horizontally with margin */
     border-radius: 10px; /* Rounded corners for the content box */
     padding: 20px; /* Padding inside the content box */
-    max-width: 800px; /* Set a maximum width for the content box */
+    max-width: 1000px; /* Set a maximum width for the content box */
     width: 100%; /* Ensure the wrapper takes up full width within the max-width */
 }
 
@@ -74,12 +74,12 @@ body {
 }
 
 .content-box {
-    background-color: rgba(47, 36, 55, 0.8); /* Black transparent */
+    background-color: #444; /* Set to the desired color */
     padding: 2em;
     border-radius: 8px;
     max-width: 700px;
     width: 100%;
-    box-shadow: 0 0 10px rgba(47, 36, 55, 0.8);
+    box-shadow: 0 0 10px rgba(47, 36, 55, 0.8); /* Optional: Adjust shadow if needed */
 }
 
 .text {

@@ -10,10 +10,10 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 150vh;
+    min-height: 80vh;
     background: #333; /* Solid white background for content */
-    margin: 80px; /* Add margin to create space around the content box */
-    border-radius: 5px; /* Rounded corners for the content box */
+    margin: 50px; /* Add margin to create space around the content box */
+    border-radius: 10px; /* Rounded corners for the content box */
     padding: 10px; /* Padding inside the content box */
 }
 

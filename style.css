@@ -60,7 +60,7 @@ body {
 }
 
 .tabs .tab-link.active {
-    background-color: #1A3850;
+    background-color: #444;
     color: white;
 }
 
@@ -74,10 +74,10 @@ body {
 }
 
 .content-box {
-    background-color: rgba(0, 0, 0, 0.8); /* Black transparent */
+    background-color: rgba(0, 0, 0, 0.2); /* Black transparent */
     padding: 2em;
     border-radius: 8px;
-    max-width: 600px;
+    max-width: 700px;
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
